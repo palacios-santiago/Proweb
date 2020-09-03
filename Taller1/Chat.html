@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=»Cache-Control» content=»no-cache» />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" type="text/css" href="Proyecto.css">  
+    <title>Chat</title>
+
+</head>
+
+<body>
+    <div class="menu">
+        <header>
+            <h1>Bienvenido a mi pagina.</h1>
+        </header>
+
+        <a href="Welcome.html">Bienvenida</a>
+        <a href="Biografia.html">Biografía</a>
+        <a href="Datos.html">Hoja de Vida</a>
+        <a href="Material.html">Material de Interés</a>
+        <a href="Chat.html">Chat</a>
+
+    </div>
+    <main class="main">
+        <div onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+            <h2>Bienvenido al chat</h2>
+            <p>Escribe en el recuadro grande un mensaje de no mas de 300 caracteres y el otro escribe tu nombre, luego
+                dale a enviar.</p>
+        </div>
+        <div onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+            <p>Nombre Completo:</p>
+            <input id="nametxt"  type="text" name="name">
+            <span id="errorname">Es obligatorio escribir un nombre</span>
+            <p>Mensaje:</p>
+            <textarea id="msg" name="mensaje" rows="8" cols="20"></textarea> 
+            <span id="errormsg">Es obligatorio escribir un mensaje que tenga menos de 300 caracteres</span>
+            <input id="enviarbtn" type="submit" name="btnenviar" value="Enviar">
+            <h3>Chat:</h3>
+            <textarea id="logchat" rows="40" cols="70"></textarea>
+        </div>
+
+
+    </main>
+    <script type="text/javascript" src="Proyecto.js"></script>
+</body>
+
+</html>

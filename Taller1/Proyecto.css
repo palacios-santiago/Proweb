@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Sora&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin:0;
+  background-color: rgb(247, 159, 108);
+}
+h2,h3,h4{
+  text-decoration: underline rgb(35, 203, 245);
+}
+table {
+  border: 8pt black;
+}
+td:nth-child(odd){
+  font-weight: bold;
+}
+tr:nth-child(even){
+  background-color: limegreen;
+  color: black;
+  
+}
+tr:nth-child(odd){
+  background-color: white;
+  color: black;
+}
+th{
+  font-weight: bold;
+  background-color: navy;
+  color: white;
+}
+
+.menu{
+    overflow: hidden;
+    background-color: rgb(172, 27, 27) ;
+    position: fixed;
+    top: 0;
+    width: 100% ;
+    height: 100pt;
+}
+#imgwelcome{
+  float:left;
+  border: 2px solid black;
+  box-shadow: 4px 4px 4px black;
+  margin: 5px;
+}
+.ulDatos{
+  list-style: none; 
+}
+.ulDatos li::before {
+  content: "•"; 
+  color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em
+}
+.olDatos{
+  list-style: none; 
+  counter-reset: li;
+}
+.olDatos li::before {
+  content: counter(li); 
+  color: red;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+li {
+  counter-increment: li;
+}
+
+.imgDatos{
+  height:500px;
+  width: 750px;
+  text-align: center;
+}
+.juan{
+  height:500px;
+  width: 400px;
+  margin-left: 200px;
+}
+.sub{
+  border: 2px solid rgb(25, 43, 28);
+}
+#explaboral{
+  background: linear-gradient(#1da1ee, #1d5fee);
+}
+#projects{
+  background: linear-gradient(#1d5fee, #1d2eee);
+}
+#training{
+  background: linear-gradient(#1d2eee, #6d1dee);
+}
+#photos{
+  background: linear-gradient(#6d1dee, #bd1dee);
+}
+
+.menu a{
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Sora', sans-serif;
+}
+.menu a:hover {
+    background: #ddd;
+    color: black;
+  }
+.main{
+    margin-top: 135px;
+    font-family: 'Raleway', sans-serif;
+}
+#errormsg{
+visibility: hidden;
+font-weight: bold;
+color: white;
+background: red;
+border:solid black;
+}
+#errorname{
+  visibility: hidden;
+  font-weight: bold;
+  color: white;
+  background: red;
+  border:solid black;
+}

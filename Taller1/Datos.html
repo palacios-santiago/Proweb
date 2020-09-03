@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv =»Cache-Control» content =»no-cache»/>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" type="text/css" href="Proyecto.css">
+    <script type="text/javascript" src="Proyecto.js"></script>
+    <title>Datos</title>
+
+</head>
+
+<body>
+    <div class="menu">
+        <header>
+          <h1>Bienvenido a mi pagina.</h1>
+        </header>
+            <a href="Welcome.html">Bienvenida</a>
+            <a href="Biografia.html">Biografia</a>
+            <a href="Datos.html">Hoja de Vida</a>
+            <a href="Material.html">Material de Interés</a>
+            <a href="Chat.html">Chat</a>
+        </div>
+    <main class="main">
+
+        <div onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+        <h2>Esta es la lista con mis datos de interes.</h2>
+        
+        <h4>Una seccion mucho menos importante</h4>
+        <p> If you use this site regularly and would like to help keep the site on the Internet, please consider
+            donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation, any sum
+            is appreciated </p>
+
+            <ul class="ulDatos">
+                <li><a class="link" href="#explaboral">Experiencia Laboral</a></li>
+                <li><a class="link" href="#projects">Proyectos Realizados</a></li>
+                <li><a class="link" href="#training">Conocimientos</a></li>
+                <li><a class="link" href="#photos">Fotografía</a></li>
+            </ul>
+        </div>
+        <div class="sub" id="explaboral" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+            <h2>Experiencia Laboral:</h2>
+            <p>Se encuentra actualmente realizando una práctica social con la PRANA, una incubadora de empresas con más de 10 años. En esta práctica realiza 
+                distintas labores relacionadas al mantenimiento y actualización de la página web de la empresa, además del apoyo a otros proyectos e iniciativas.</p>
+        </div>
+
+        <div  class="sub" id="projects" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+            <h2>Proyectos Realizados:</h2>
+            <ol class="olDatos">
+                <li>Propuesta de aplicación móvil con el nombre de Shoppio que permite a los usuarios acceder a información de manera personalizada sobre diferentes centros comerciales. (PIAN)</li>
+                <li>Propuesta de un sistema de información que mejoraría la operación interna de la empresa Gestión y Resultados (Sistemas de información) </li>
+                <li>Aplicativo para simular modelos epidemiológicos usando lenguaje R, que poseía información de las estadísticas del COVID-19 en Italia (análisis numérico) </li>
+                <li>Pagina Web conocida como Smart Closet que ofrece un armario virtual para gestionar las prendas de un usuario y posteriormente generar atuendos. (ingeniería de Software) </li>
+            </ol>
+        </div>
+
+        <div class="sub" id="training" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+            <h2>Conocimientos:</h2>
+            <ul class="ulDatos">
+                <li>Diplomado "Construyendo territorios de paz" dictado por la Alcaldía de Armenia (2016). </li>
+                <li>Curso de programación en la web con Javascript dictado por la Universidad de Pensilvania mediante EdX (2020).</li>
+                <li>Manejo de idiomas:
+                    <ul class="ulDatos">
+                        <li>Español como lengua madre.</li>
+                        <li>Ingles nivel intermedio-avanzado.</li>
+                        <li>Italiano básico.</li>
+                        <li>Actualmente estudiando portugués. </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="sub" id="photos" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+            <h2>Fotografía:</h2>
+            <p>Las siguientes son las mejores tomas que ha tomado Santiago:</p>
+                <img class="imgDatos" src="photos/condor.jpg" alt="Condor en Purace, 2019.">
+                <img class="imgDatos" src="photos/iglesia.jpg" alt="Iglesia y Luna en Quito, 2019.">
+                <img  class="imgDatos juan" src="photos/juan.jpg" alt="Juan en Quito, 2019.">
+                <img class="imgDatos" src="photos/lagartija.jpg" alt="Lagartija en Quito, 2018.">
+        </div>
+        
+    </main>
+</body>
+
+</html>
